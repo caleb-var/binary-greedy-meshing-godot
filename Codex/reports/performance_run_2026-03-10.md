@@ -12,12 +12,12 @@ cmake --build Codex/build -j
 
 ## Single run result
 
-- Generate: 2.58 ms
-- DDGI: 26.67 ms
-- Light bake: 3.32 ms
-- Meshing: 1.37 ms
-- Codec: 0.45 ms
-- Render: 145.34 ms
+- Generate: 2.70 ms
+- DDGI: 25.36 ms
+- Light bake: 2.51 ms
+- Meshing: 1.29 ms
+- Codec: 0.57 ms
+- Render: 139.21 ms
 
 ## 8-run aggregate
 
@@ -38,3 +38,4 @@ cmake --build Codex/build -j
 
 - Generated image: `output/frame.ppm`
 - Converted preview: `output/frame.png`
+- JPG conversion was attempted but blocked in this environment (no local JPEG encoder tools and package installation is proxy-blocked).
