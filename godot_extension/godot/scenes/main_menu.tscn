@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0421ekuxf5gb"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_ux6l7"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ux6l7")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -210.0
+offset_right = 260.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="VBox"]
+layout_mode = 2
+text = "Binary Mesher Main Menu"
+horizontal_alignment = 1
+
+[node name="UpdateText" type="RichTextLabel" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 180)
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="Buttons" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MemoryTest" type="Button" parent="VBox/Buttons"]
+layout_mode = 2
+text = "Run Memory Test"
+
+[node name="MesherTest" type="Button" parent="VBox/Buttons"]
+layout_mode = 2
+text = "Run Mesher Test"
+
+[node name="UiTest" type="Button" parent="VBox/Buttons"]
+layout_mode = 2
+text = "Run UI Test"
+
+[node name="LogText" type="RichTextLabel" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 120)
+bbcode_enabled = true
+fit_content = true
+scroll_following = true
