@@ -1,0 +1,12 @@
+[configuration]
+entry_symbol = "binary_mesher_library_init"
+compatibility_minimum = "4.2"
+reloadable = true
+
+[libraries]
+linux.debug.x86_64 = "res://bin/libbinary_menu_extension.so"
+linux.release.x86_64 = "res://bin/libbinary_menu_extension.so"
+windows.debug.x86_64 = "res://bin/binary_menu_extension.dll"
+windows.release.x86_64 = "res://bin/binary_menu_extension.dll"
+macos.debug = "res://bin/libbinary_menu_extension.dylib"
+macos.release = "res://bin/libbinary_menu_extension.dylib"

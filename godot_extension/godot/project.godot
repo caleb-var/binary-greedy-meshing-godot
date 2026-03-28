@@ -1,0 +1,10 @@
+; Engine configuration file.
+
+config_version=5
+
+[application]
+config/name="Binary Mesher Debug Menu"
+run/main_scene="res://scenes/main_menu.tscn"
+
+[rendering]
+renderer/rendering_method="forward_plus"
